@@ -9,6 +9,7 @@ Following on from: [https://github.com/walpolea/leximitedjs](https://github.com/
 
 
 <hr>
+
 ### INSTALL
 
 [https://pypi.org/project/leximited/1.0.3/](https://pypi.org/project/leximited/1.0.3/)
@@ -17,6 +18,7 @@ Following on from: [https://github.com/walpolea/leximitedjs](https://github.com/
 
 
 <hr>
+
 ### IMPORT
 
 ``` import leximited ```
