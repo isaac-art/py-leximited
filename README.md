@@ -1,4 +1,7 @@
-# PY-LEXIMITED by LCF NERD 218
+# PY-LEXIMITED 
+
+by LCF NERD 218
+
 #### LEX-ENCODING IN PYTHON
 
 <b>Lex</b>icographically Del<b>imited</b> Encoding for python, why not ay...
