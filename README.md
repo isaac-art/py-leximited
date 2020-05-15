@@ -7,6 +7,10 @@ See: [https://github.com/elenasa/ULAM/wiki/Appendix-D:-Leximited-Format](https:/
 
 Following on from: [https://github.com/walpolea/leximitedjs](https://github.com/walpolea/leximitedjs)
 
+WHY? : [https://twitter.com/walpolea/status/1260954256292458497](https://twitter.com/walpolea/status/1260954256292458497)
+
+LIKE THIS? CHECK OUT => [https://www.livingcomputation.org/](https://www.livingcomputation.org/)
+
 
 <hr>
 
