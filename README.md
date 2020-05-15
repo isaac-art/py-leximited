@@ -24,6 +24,7 @@ Following on from: [https://github.com/walpolea/leximitedjs](https://github.com/
 ``` import leximited ```
 
 <hr>
+
 ### USE
 
 Call ```leximited.to_leximited()``` with numbers (int or str) or arbitrary strings
