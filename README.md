@@ -1,4 +1,4 @@
-# PY-LEXIMITED 
+# PY-LEXIMITED by LCF NERD 218
 #### LEX-ENCODING IN PYTHON
 
 <b>Lex</b>icographically Del<b>imited</b> Encoding for python, why not ay...
@@ -74,4 +74,9 @@ INPUT: [1, '002', 2000000000, 'Bh3!!!', 'a man, a plan, a guy: eleets', '']
 OUTPUT: [11, '12', 92102000000000, '6Bh3!!!', '9228a man, a plan, a guy: eleets', '0']
 
 ```
+
+
+### TODO
+
+[] from_leximited() 
 
