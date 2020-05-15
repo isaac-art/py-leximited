@@ -12,7 +12,7 @@ Following on from: [https://github.com/walpolea/leximitedjs](https://github.com/
 
 ### INSTALL
 
-[https://pypi.org/project/leximited/1.0.3/](https://pypi.org/project/leximited/1.0.3/)
+[https://pypi.org/project/leximited/1.0.4/](https://pypi.org/project/leximited/1.0.4/)
 
 ``` pip install leximited ```
 
