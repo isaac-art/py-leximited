@@ -19,7 +19,7 @@ LIKE THIS? CHECK OUT => [https://www.livingcomputation.org/](https://www.livingc
 
 ### INSTALL
 
-[https://pypi.org/project/leximited/1.1.0/](https://pypi.org/project/leximited/1.1.0/)
+[https://pypi.org/project/leximited/1.1.1/](https://pypi.org/project/leximited/1.1.1/)
 
 ``` pip install leximited ```
 
