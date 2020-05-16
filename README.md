@@ -90,7 +90,5 @@ AND BACK AGAIN: [1, '2', 2000000000, 'Bh3!!!', 'a man, a plan, a guy: eleets', '
 Note that the leading zeros are lost when converting back again.
 
 
-### TODO
 
-[] from_leximited() 
 
