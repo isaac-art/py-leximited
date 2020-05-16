@@ -1,4 +1,7 @@
 # PY-LEXIMITED 
+
+by LCF NERD 218
+
 #### LEX-ENCODING IN PYTHON
 
 <b>Lex</b>icographically Del<b>imited</b> Encoding for python, why not ay...
@@ -6,6 +9,10 @@
 See: [https://github.com/elenasa/ULAM/wiki/Appendix-D:-Leximited-Format](https://github.com/elenasa/ULAM/wiki/Appendix-D:-Leximited-Format)
 
 Following on from: [https://github.com/walpolea/leximitedjs](https://github.com/walpolea/leximitedjs)
+
+WHY? : [https://twitter.com/walpolea/status/1260954256292458497](https://twitter.com/walpolea/status/1260954256292458497)
+
+LIKE THIS? CHECK OUT => [https://www.livingcomputation.org/](https://www.livingcomputation.org/)
 
 
 <hr>
@@ -81,4 +88,9 @@ AND BACK AGAIN: [1, '2', 2000000000, 'Bh3!!!', 'a man, a plan, a guy: eleets', '
 
 ```
 Note that the leading zeros are lost when converting back again.
+
+
+### TODO
+
+[] from_leximited() 
 
