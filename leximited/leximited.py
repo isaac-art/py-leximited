@@ -28,7 +28,7 @@ def to_leximited_arbitrary_str(in_string):
         return str(f'{str(length)}{in_string}')
 
 
-def list_as_leximited(in_list, convert_text=True):
+def list_to_leximited(in_list, convert_text=True):
     """ Return the given list where numbers, and optionally text, (str or int) are
     converted to their leximited forms"""
     out_list = []
@@ -44,7 +44,7 @@ def list_as_leximited(in_list, convert_text=True):
     return out_list
 
 
-def list_as_leximited_int(in_list):
+def list_to_leximited_int(in_list):
     """ Return the given list converted to a list of leximited int"""
     out_list = []
     for item in in_list:
@@ -52,7 +52,7 @@ def list_as_leximited_int(in_list):
     return out_list
 
 
-def list_as_leximited_str(in_list):
+def list_to_leximited_str(in_list):
     """ Return the given list converted to a list of leximited str"""
     out_list = []
     for item in in_list:
@@ -60,7 +60,7 @@ def list_as_leximited_str(in_list):
     return out_list
 
 
-def tuple_as_leximited(in_tuple, convert_text=True):
+def tuple_to_leximited(in_tuple, convert_text=True):
     """ Return the given tuple where numbers (str or int) are
     converted to their leximited forms, and everything else 
     left the same"""
@@ -77,7 +77,7 @@ def tuple_as_leximited(in_tuple, convert_text=True):
     return out_tuple
 
 
-def tuple_as_leximited_int(in_tuple):
+def tuple_to_leximited_int(in_tuple):
     """ Return the given tuple converted to a tuple of leximited int"""
     out_tuple = ()
     for item in in_tuple:
@@ -85,7 +85,7 @@ def tuple_as_leximited_int(in_tuple):
     return out_tuple
 
 
-def tuple_as_leximited_str(in_tuple):
+def tuple_to_leximited_str(in_tuple):
     """ Return the given tuple converted to a tuple of leximited str"""
     out_tuple = ()
     for item in in_tuple:
@@ -102,6 +102,74 @@ def to_leximited(number):
         return to_leximited_arbitrary_str(number)   
     else:
         return "Error: what is this?"
+
+
+def from_leximited_int(number):
+    length = int(str(number)[0])
+    if(length is 9):
+        s_length = int(str(number)[1:][0])+1
+        return int(str(number)[1+s_length:])
+    return int(str(number)[1:])
+
+
+def from_leximited_str(number):
+    length = str(number)[0]
+    if(length.isdigit()):
+        if(int(length) == 9):
+            s_length = int(str(number)[1:][0])+1
+            return f'{str(number)[1+s_length:]}'
+        return f'{str(number)[1:]}'
+    return False
+
+
+def from_leximited_arbitrary_str(number):
+    length = int(str(number)[0])
+    if(length == 9):
+        s_length = int(str(number)[1:][0])+1
+        return f'{str(number)[1+s_length:]}'
+    return f'{str(number)[1:]}'
+
+
+def from_leximited(number):
+    if(type(item) is int):
+        return from_leximited_int(item)
+    elif(type(item) is str and item.isdigit()):
+        return str(from_leximited_str(item))
+    elif(type(item) is str):
+        return from_leximited_arbitrary_str(item)   
+    else:
+        return False
+
+
+def list_from_leximited(in_list, convert_text=True):
+    """ Takes a list and returns a list with leximited int and str back to 'normal' """
+    out_list = []
+    for item in in_list:
+        if(type(item) is int):
+            out_list.append(from_leximited_int(item)) 
+        elif(type(item) is str and item.isdigit()):
+            out_list.append(from_leximited_str(item)) 
+        elif(type(item) is str and convert_text):
+            out_list.append(from_leximited_arbitrary_str(item))  
+        else:
+            out_list.append(item)
+    return out_list
+
+
+
+def tuple_from_leximited(in_tuple, convert_text=True):
+    """ Takes a tuple and returns a tuple with leximited int and str back to 'normal' """
+    out_tuple = ()
+    for item in in_tuple:
+        if(type(item) is int):
+            out_tuple += (from_leximited_int(item), )
+        elif(type(item) is str and item.isdigit()):
+            out_tuple += (from_leximited_str(item), )
+        elif(convert_text):
+            out_tuple += (from_leximited_arbitrary_str(item), ) 
+        else:
+            out_tuple += (item, )
+    return out_tuple
 
 
 

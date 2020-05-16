@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="leximited",
-    version="1.0.4",
+    version="1.1.0",
     author="Isaac Clarke",
     author_email="isaac@isaacclarke.com",
     description="Lexicographically Delimited Encoding",
