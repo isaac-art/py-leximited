@@ -2,6 +2,8 @@
 
 by LCF NERD 218
 
+[![Downloads](https://pepy.tech/badge/leximited/month)](https://pepy.tech/project/leximited/month)
+
 #### LEX-ENCODING IN PYTHON
 
 <b>Lex</b>icographically Del<b>imited</b> Encoding for python, why not ay...
