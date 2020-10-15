@@ -43,39 +43,39 @@ Call ```leximited.from_leximited()``` with lex-encoded numbers (int or str) or a
 Also supports lists and tuples and allows for mixed lists with lex-encoding on numbers only, see examples below.
 
 
-```
+```python
 print(f'INTEGERS: {leximited.to_leximited(1)}')
 INTEGERS: 11
 ```
 
-```
+```python
 print(f"NUMBERS WITH LEADING 0s: {leximited.to_leximited('002')}")
 NUMBERS WITH LEADING 0s: '12'
 ```
 
-```
+```python
 print(f'BIG NUMBERS: {leximited.to_leximited(2000000000)}')
 BIG NUMBERS: 92102000000000
 ```
 
-```
+```python
 print(f"SHORT STRINGS: {leximited.to_leximited('Bh3!!!')}")
 SHORT STRINGS: 6Bh3!!!
 ```
 
-```
+```python
 print(f'LONG STRINGS: {leximited.to_leximited("a man, a plan, a guy: eleets")}')
 LONG STRINGS: 9228a man, a plan, a guy: eleets
 ```
 
-```
+```python
 print(f"EMPTY STRINGS: {leximited.to_leximited('')}")
 EMPTY STRINGS: 0
 ```
 
 Also takes lists or tuples, and optionally preserve non-number strings as their original form (convert_text defaults to True to lex-encode everything).
 
-```
+```python
 
 in_list = [1, '002', 2000000000, 'Bh3!!!', 'a man, a plan, a guy: eleets', '']
 print(f'INPUT: {in_list}')
